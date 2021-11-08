@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
     private fun selectImage() {
         binding.btnAdd.setOnClickListener {
             if (binding.editTextInputText1.text.isNullOrEmpty()) {
-                Toast.makeText(this, "please, input the link", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Please, input the image URL", Toast.LENGTH_SHORT).show()
             } else {
                 val link = binding.editTextInputText1.text.toString()
                 imagelist.add(link)
